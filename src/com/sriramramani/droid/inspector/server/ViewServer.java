@@ -63,7 +63,7 @@ public class ViewServer implements Runnable {
     /**
      * The default port used to start view servers.
      */
-    private static final int VIEW_SERVER_DEFAULT_PORT = 5555;
+    private static final int VIEW_SERVER_DEFAULT_PORT = 4545;
     private static final int VIEW_SERVER_MAX_CONNECTIONS = 10;
     private static final String BUILD_TYPE_USER = "user";
 
