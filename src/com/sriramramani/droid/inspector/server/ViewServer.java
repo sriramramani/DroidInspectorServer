@@ -105,8 +105,8 @@ public class ViewServer implements Runnable {
      */
     public static ViewServer get(Context context) {
         ApplicationInfo info = context.getApplicationInfo();
-        if (BUILD_TYPE_USER.equals(Build.TYPE) &&
-                (info.flags & ApplicationInfo.FLAG_DEBUGGABLE) != 0) {
+//        if (BUILD_TYPE_USER.equals(Build.TYPE) &&
+        if ((info.flags & ApplicationInfo.FLAG_DEBUGGABLE) != 0) {
             if (sServer == null) {
                 sServer = new ViewServer(ViewServer.VIEW_SERVER_DEFAULT_PORT);
             }
